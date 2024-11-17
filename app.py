@@ -8,6 +8,6 @@ def home():
     return "Hello, Render!"
 
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5000))
+    # Renderが提供するPORT環境変数を取得
+    port = int(os.environ.get('PORT', 5000))  # デフォルト値は5000
     app.run(host='0.0.0.0', port=port)
-
